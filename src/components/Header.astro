@@ -1,0 +1,55 @@
+---
+const ImgBuscador = <svg  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+        <path d="M21 21l-6 -6"></path>
+     </svg>
+
+
+---
+
+<header>
+  <div>
+    Logo
+  </div>
+  <div class="HeaderSearch">
+   
+   <input type="text" placeholder={`Buscador..`} id="buscador">
+  </div>
+  <div>
+    <a href="/">
+      Inicio
+      
+    </a>
+    <a href="/">
+      Productos
+    </a>
+    <a href="/">
+      Sobre Nosotros
+    </a>
+  </div>
+</header>
+
+<style>
+  header{
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10dvh;
+  }
+  div{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+  }
+  .HeaderSearch{
+    display: flex;
+  }
+  #buscador{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+
+  }
+  
+</style>
